@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: #040404;
+    font-family: "Poppins", serif;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    margin: 0 50px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+span {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+span, a {
+    color: #fff;
+}
+
+a {
+   text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffbb3b;
+}
+
+.main-content {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 100px;
+    color:#ffbb3b;
+}
+
+.left-content {
+    height: 100vh;
+    padding: 0;
+    margin-top: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+.right-content {
+    background-image: url("./img/plang_gabriel_damwesh1.png");
+    background-size: 91%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-text {
+    color: #fff;
+}
+
+h1, span.white-text {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+button {
+    margin-top: 30px;
+    padding: 13px 10px;
+    border-radius: 25px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 3px;
+}
+
+.btn-offwhite {
+    background-color: #ffbb3b;
+    color: #040404;
+    border-color: #ffbb3b;
+}
+
+.btn-black {
+    background-color: #040404;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-black a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-offwhite a {
+    text-decoration: none;
+    color: #040404;
+}
+
+.btn-offwhite a:hover {
+    text-decoration: none;
+    color: #040404;
+}
