@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+            border: none;
+            list-style: none;
+        }
+        html, body {
+          min-height: 100%;
+          height: 100vh;
+        }
+    
+        div.wrapper{
+          position: relative;
+          min-height: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          overflow: auto;
+        }
+    
+      /* parent div */
+        div.content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+            height: 100vh;
+        }
+    
+      /* child div  */
+        div.splash {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: black;
+    
+      /* This works with text only. */
+            width: fit-content;
+            block-size: fit-content;
+        }
+    
+         /* We change the image size here. */
+        div.splash > img.brand {
+            height: auto;
+            width: 50%;
+        }
+      </style>
+    </head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="splash">
+                <img class="brand" src="./img/portfolio1.png" width="3072" height="2304" alt="logo">
+                <img class="brand" src="./img/portfolio2.png" width="3072" height="2304" alt="logo">
+                <img class="brand" src="./img/portfolio3.png" width="3072" height="2304" alt="logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
